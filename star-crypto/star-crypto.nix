@@ -20,7 +20,7 @@ let
           arithmoi array base bytestring crypto-api monadcryptorandom
           QuickCheck
         ];
-        license = stdenv.lib.licenses.unfree;
+        license = "unknown";
         hydraPlatforms = stdenv.lib.platforms.none;
       };
 

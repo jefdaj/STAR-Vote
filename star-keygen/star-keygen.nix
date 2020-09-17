@@ -24,7 +24,7 @@ let
           monadcryptorandom safecopy star-crypto star-util text time
           utf8-string
         ];
-        license = stdenv.lib.licenses.unfree;
+        license = "unknown";
         hydraPlatforms = stdenv.lib.platforms.none;
       };
 

@@ -24,7 +24,7 @@ let
           snap snap-core snap-server star-types text transformers
         ];
         description = "Project Synopsis Here";
-        license = stdenv.lib.licenses.unfree;
+        license = "unknown";
         hydraPlatforms = stdenv.lib.platforms.none;
       };
 

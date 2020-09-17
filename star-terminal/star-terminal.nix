@@ -29,7 +29,7 @@ let
           snap-server star-types star-util text time transformers uuid
         ];
         description = "Prototype of a voting machine";
-        license = stdenv.lib.licenses.unfree;
+        license = "unknown";
         hydraPlatforms = stdenv.lib.platforms.none;
       };
 

@@ -16,7 +16,7 @@ let
         executableHaskellDepends = [
           base blaze-html bytestring lens process snap star-util text unix
         ];
-        license = stdenv.lib.licenses.unfree;
+        license = "unknown";
         hydraPlatforms = stdenv.lib.platforms.none;
       };
 
