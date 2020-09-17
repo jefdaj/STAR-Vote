@@ -15,9 +15,9 @@ let
         pname = "append-only-bb";
         version = "0.0.1.0";
         src = ./.;
+        jailbreak = true;
         isLibrary = true;
         isExecutable = true;
-        jailbreak = true;
         enableSeparateDataOutput = true;
         libraryHaskellDepends = [
           aeson base base64-bytestring byteable bytestring convertible

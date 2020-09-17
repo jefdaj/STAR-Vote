@@ -12,6 +12,7 @@ let
         pname = "star-types";
         version = "0.1";
         src = ./.;
+        jailbreak = true;
         libraryHaskellDepends = [
           acid-state aeson base base16-bytestring binary bytestring cassava
           containers lens monadcryptorandom random safecopy SHA star-crypto

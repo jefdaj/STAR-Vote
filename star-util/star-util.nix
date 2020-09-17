@@ -16,6 +16,7 @@ let
         pname = "star-util";
         version = "0.1";
         src = ./.;
+        jailbreak = true;
         libraryHaskellDepends = [
           acid-state aeson append-only-bb base binary blaze-html byteable
           bytestring case-insensitive containers crypto-pubkey

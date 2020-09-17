@@ -11,6 +11,7 @@ let
         pname = "star-init";
         version = "0.1.0.0";
         src = ./.;
+        jailbreak = true;
         isLibrary = false;
         isExecutable = true;
         executableHaskellDepends = [

@@ -17,6 +17,7 @@ let
         pname = "star-terminal";
         version = "0.1";
         src = ./.;
+        jailbreak = true;
         isLibrary = false;
         isExecutable = true;
         enableSeparateDataOutput = true;

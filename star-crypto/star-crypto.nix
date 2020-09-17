@@ -12,6 +12,7 @@ let
         pname = "star-crypto";
         version = "0.1.0.0";
         src = ./.;
+        jailbreak = true;
         libraryHaskellDepends = [
           aeson arithmoi array base binary bytestring containers crypto-api
           crypto-random monadcryptorandom mtl
