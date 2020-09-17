@@ -18,6 +18,7 @@
 .stack-work
 cabal-dev
 cabal.project.local
+cabal.project.local~
 cabal.sandbox.config
 demo/
 dist
