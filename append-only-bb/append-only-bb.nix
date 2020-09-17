@@ -17,6 +17,7 @@ let
         src = ./.;
         isLibrary = true;
         isExecutable = true;
+        jailbreak = true;
         enableSeparateDataOutput = true;
         libraryHaskellDepends = [
           aeson base base64-bytestring byteable bytestring convertible
