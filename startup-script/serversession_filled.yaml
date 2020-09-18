@@ -7,9 +7,9 @@ windows:
     - mkdir -p starvote/log
     - cd ~/starvote
   panes:
-    - bin/bbserver -p 8000
-    - bin/star-keygen -p 8001
-    - bin/star-voter-db -p 8002
-    - bin/star-controller -p 8003
-    - 
+    - ~/STAR-Vote/append-only-bb/.stack-work/install/x86_64-linux-tinfo6/454248f8445458d3e0ae08342c893d941dff2da12a4dcef7cd0109f7a40f6f5e/7.10.2/bin/bbserver -p 8000
+    - ~/STAR-Vote/star-keygen/.stack-work/install/x86_64-linux-tinfo6/454248f8445458d3e0ae08342c893d941dff2da12a4dcef7cd0109f7a40f6f5e/7.10.2/bin/star-keygen -p 8001
+    - ~/STAR-Vote/star-voter-db/.stack-work/install/x86_64-linux-tinfo6/b6f2bbd5554bfbb2840e92a28b6f0c532ba47bb10d9c2d1238164a5a45831e53/7.10.2/bin/star-voter-db -p 8002
+    - ~/STAR-Vote/star-controller/.stack-work/install/x86_64-linux-tinfo6/454248f8445458d3e0ae08342c893d941dff2da12a4dcef7cd0109f7a40f6f5e/7.10.2/bin/star-controller -p 8003
+    - tail -f log/*
 

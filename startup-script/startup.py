@@ -9,6 +9,7 @@ import sys
 import requests
 import os
 import textwrap
+from time import sleep
 
 startPort = 8000
 muxconfig = { 'parentdir'      : '~'
@@ -93,18 +94,30 @@ def initialize_voters(cfg, csv):
     print_item('Initializing voter database', http_resposne_to_string(r))
 
 voters = textwrap.dedent('\
-            1,John Doe,Nowhereland,1,oregon-201\n\
+            1,John Doe,Nowhereland,1,oregon-2014\n\
             2,Jane Doe,Stix,2,oregon-2014\n\
             3,Jimmy Bat,Stix,3,oregon-2014')
 
-start_servers(muxconfig)
-print("Started server")
-check_server(muxconfig['bbport'], 'bulletin board')
-reset_bulletin_board(muxconfig)
-check_server(muxconfig['keygenport'], 'keygen server')
-register_keygen(muxconfig)
-initialize_keygen(muxconfig,1,1)
-check_server(muxconfig['dbport'], 'database server')
-initialize_voters(muxconfig,voters)
-check_server(muxconfig['controllerport'], 'controller server')
+def main():
+    start_servers(muxconfig)
+    sleep(1)
+    print("Started server")
+    check_server(muxconfig['bbport'], 'bulletin board')
+    sleep(1)
+    reset_bulletin_board(muxconfig)
+    sleep(1)
+    check_server(muxconfig['keygenport'], 'keygen server')
+    sleep(1)
+    register_keygen(muxconfig)
+    sleep(1)
+    initialize_keygen(muxconfig,1,1)
+    sleep(1)
+    check_server(muxconfig['dbport'], 'database server')
+    sleep(1)
+    initialize_voters(muxconfig,voters)
+    sleep(1)
+    check_server(muxconfig['controllerport'], 'controller server')
+    sleep(1)
 
+if __name__ == '__main__':
+    main()

@@ -21,7 +21,7 @@ for b in bbserver bbclient star-keygen star-terminal star-voter-db star-controll
   which $b
 done
 
-rm -rf bin
+rm -rf ~/starvote/*
 mkdir -p ~/starvote/bin
 for b in bbserver bbclient star-keygen star-terminal star-voter-db star-controller; do
   cp $(which $b) ~/starvote/bin/
