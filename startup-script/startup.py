@@ -9,11 +9,10 @@ import sys
 import requests
 import os
 import textwrap
-from time import sleep
 
 startPort = 8000
-muxconfig = { 'parentdir'      : '~'
-            , 'dir'            : 'starvote'
+muxconfig = { 'parentdir'      : '.'
+            , 'dir'            : '.'
             , 'bbport'         : startPort
             , 'keygenport'     : startPort + 1
             , 'dbport'         : startPort + 2
@@ -100,24 +99,15 @@ voters = textwrap.dedent('\
 
 def main():
     start_servers(muxconfig)
-    sleep(1)
     print("Started server")
     check_server(muxconfig['bbport'], 'bulletin board')
-    sleep(1)
     reset_bulletin_board(muxconfig)
-    sleep(1)
     check_server(muxconfig['keygenport'], 'keygen server')
-    sleep(1)
     register_keygen(muxconfig)
-    sleep(1)
     initialize_keygen(muxconfig,1,1)
-    sleep(1)
     check_server(muxconfig['dbport'], 'database server')
-    sleep(1)
     initialize_voters(muxconfig,voters)
-    sleep(1)
     check_server(muxconfig['controllerport'], 'controller server')
-    sleep(1)
 
 if __name__ == '__main__':
     main()

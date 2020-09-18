@@ -3,13 +3,13 @@ windows:
 - window_name: dev window
   layout: tiled
   shell_command_before:
-    - cd ~
-    - mkdir -p starvote/log
-    - cd ~/starvote
+    - cd .
+    - mkdir -p ./log
+    - pushd .
   panes:
-    - ~/STAR-Vote/append-only-bb/.stack-work/install/*/*/*/bin/bbserver -p 8000
-    - ~/STAR-Vote/star-keygen/.stack-work/install/*/*/*/bin/star-keygen -p 8001
-    - ~/STAR-Vote/star-voter-db/.stack-work/install/*/*/*/bin/star-voter-db -p 8002
-    - ~/STAR-Vote/star-controller/.stack-work/install/*/*/*/bin/star-controller -p 8003
+    - ../append-only-bb/.stack-work/install/*/*/*/bin/bbserver -p 8000
+    - ../star-keygen/.stack-work/install/*/*/*/bin/star-keygen -p 8001
+    - ../star-voter-db/.stack-work/install/*/*/*/bin/star-voter-db -p 8002
+    - ../star-controller/.stack-work/install/*/*/*/bin/star-controller -p 8003
     - tail -f log/*
 

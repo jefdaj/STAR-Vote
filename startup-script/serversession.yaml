@@ -5,10 +5,10 @@ windows:
   shell_command_before:
     - cd $parentdir
     - mkdir -p $dir/log
-    - cd ~/$dir
+    - pushd $dir
   panes:
-    - ~/STAR-Vote/append-only-bb/.stack-work/install/*/*/*/bin/bbserver -p $bbport
-    - ~/STAR-Vote/star-keygen/.stack-work/install/*/*/*/bin/star-keygen -p $keygenport
-    - ~/STAR-Vote/star-voter-db/.stack-work/install/*/*/*/bin/star-voter-db -p $dbport
-    - ~/STAR-Vote/star-controller/.stack-work/install/*/*/*/bin/star-controller -p $controllerport
+    - ../append-only-bb/.stack-work/install/*/*/*/bin/bbserver -p $bbport
+    - ../star-keygen/.stack-work/install/*/*/*/bin/star-keygen -p $keygenport
+    - ../star-voter-db/.stack-work/install/*/*/*/bin/star-voter-db -p $dbport
+    - ../star-controller/.stack-work/install/*/*/*/bin/star-controller -p $controllerport
     - tail -f log/*
