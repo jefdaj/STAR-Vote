@@ -7,8 +7,8 @@ windows:
     - mkdir -p $dir/log
     - cd ~/$dir
   panes:
-    - bbserver -p $bbport
-    - star-keygen -p $keygenport
-    - star-voter-db -p $dbport
-    - star-controller -p $controllerport
+    - bin/bbserver -p $bbport
+    - bin/star-keygen -p $keygenport
+    - bin/star-voter-db -p $dbport
+    - bin/star-controller -p $controllerport
     - 

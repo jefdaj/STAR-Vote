@@ -7,8 +7,9 @@ windows:
     - mkdir -p starvote/log
     - cd ~/starvote
   panes:
-    - bbserver -p 8000
-    - star-keygen -p 8001
-    - star-voter-db -p 8002
-    - star-controller -p 8003
+    - bin/bbserver -p 8000
+    - bin/star-keygen -p 8001
+    - bin/star-voter-db -p 8002
+    - bin/star-controller -p 8003
     - 
+
