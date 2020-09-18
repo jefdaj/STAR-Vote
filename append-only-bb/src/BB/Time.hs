@@ -14,7 +14,7 @@ import Data.Monoid
 
 import Data.Time
 
-import System.Locale (defaultTimeLocale)
+-- import System.Locale (defaultTimeLocale)
 
 -- | Canonical time serialization to readable strings
 timeString :: UTCTime -> String

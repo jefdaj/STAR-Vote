@@ -47,7 +47,7 @@ import System.IO (stdout, hFlush)
 import System.Locale (defaultTimeLocale)
 
 
-import Text.Blaze.Html5 hiding (map)
+import Text.Blaze.Html5 hiding (map, main)
 import Text.Blaze.Html5.Attributes hiding (id, method)
 import qualified Text.Blaze.Html5 as H
 import qualified Text.Blaze.Html5.Attributes as A

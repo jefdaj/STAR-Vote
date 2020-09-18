@@ -29,13 +29,13 @@ import           Data.SafeCopy
 import qualified Data.Text                       as T
 import           Data.Text.Encoding              (decodeUtf8With, encodeUtf8)
 import           Data.Text.Encoding.Error        (ignore)
-import           Data.Time                       (UTCTime, formatTime)
+import           Data.Time                       (UTCTime, formatTime, defaultTimeLocale)
 import           Data.Typeable
 
 import           Graphics.Barcode.Code128
 import           Graphics.PDF
 
-import           System.Locale                   (defaultTimeLocale)
+-- import           System.Locale                   (defaultTimeLocale)
 
 
 import           Application.Star.Ballot

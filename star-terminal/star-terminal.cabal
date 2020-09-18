@@ -34,18 +34,38 @@ Description:
   * In a web browser, navigate to <http://localhost:8000/ballots>
   * Enter the code: 25682
 data-files:
-  static/bootstrap-3.2.0-dist/css/*.css
-  static/bootstrap-3.2.0-dist/css/*.min.css
-  static/bootstrap-3.2.0-dist/css/*.css.map
+  static/bootstrap-3.2.0-dist/css/bootstrap.css
+  static/bootstrap-3.2.0-dist/css/bootstrap.css.map
+  static/bootstrap-3.2.0-dist/css/bootstrap.min.css
+  static/bootstrap-3.2.0-dist/css/bootstrap-theme.css
+  static/bootstrap-3.2.0-dist/css/bootstrap-theme.css.map
+  static/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css
   static/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.eot
   static/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.svg
   static/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.ttf
   static/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.woff
-  static/bootstrap-3.2.0-dist/js/*.js
-  static/bootstrap-3.2.0-dist/js/*.min.js
-  static/css/*.css
-  static/js/*.js
-  static/img/*.jpg
+  static/bootstrap-3.2.0-dist/js/bootstrap.js
+  static/bootstrap-3.2.0-dist/js/bootstrap.min.js
+  static/css/site.css
+  static/css/solid-select.css
+  static/css/spartan.css
+  static/img/aaron_auer.jpg
+  static/img/christina_jean_lugo.jpg
+  static/img/david_walker.jpg
+  static/img/dennis_richardson.jpg
+  static/img/earl_blumenauer.jpg
+  static/img/james_e_leuenberger.jpg
+  static/img/jason_levin.jpg
+  static/img/jeff_merkley.jpg
+  static/img/jeffrey_j_langan.jpg
+  static/img/john_kitzhaber.jpg
+  static/img/michael_meo.jpg
+  static/img/mike_montchalin.jpg
+  static/img/monica_wehby.jpg
+  static/img/no_portrait.jpg
+  static/img/paul_grad.jpg
+  static/img/tovia_e_fornah.jpg
+  static/js/site.js
 
 Executable star-terminal
   hs-source-dirs: src
