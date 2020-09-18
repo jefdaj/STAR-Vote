@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt-get install llvm libsqlite3-dev zlib1g-dev
+
 # TODO merge this all into one cabal/stack/nix project
 
 # but for now, build each one individually
