@@ -11,4 +11,5 @@ windows:
     - ../star-keygen/.stack-work/install/*/*/*/bin/star-keygen -p $keygenport
     - ../star-voter-db/.stack-work/install/*/*/*/bin/star-voter-db -p $dbport
     - ../star-controller/.stack-work/install/*/*/*/bin/star-controller -p $controllerport
+    - ../star-terminal/start.sh $termport
     - tail -f log/*

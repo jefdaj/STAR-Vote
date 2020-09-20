@@ -13,7 +13,8 @@ export STAR_PUBLIC_SALT=7ff1adc82440511d520c1116df34fee4e88003ccc3e73ac95f29958d
 export STAR_POST_VOTE_URL=http://localhost:8003/fillOut
 export STAR_REGISTER_URL=http://localhost:8003/registerTerminal
 
-star-terminal -p "$PORT"
+# star-terminal -p "$PORT"
+../star-terminal/.stack-work/install/*/*/*/bin/star-terminal -p "$PORT"
 
 #curl -X POST http://localhost:8000/ballots/oregon-2014/codes/25682 --data param=whatever
 

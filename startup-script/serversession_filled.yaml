@@ -11,5 +11,6 @@ windows:
     - ../star-keygen/.stack-work/install/*/*/*/bin/star-keygen -p 8001
     - ../star-voter-db/.stack-work/install/*/*/*/bin/star-voter-db -p 8002
     - ../star-controller/.stack-work/install/*/*/*/bin/star-controller -p 8003
+    - ../star-terminal/start.sh 8004
     - tail -f log/*
 

@@ -17,6 +17,7 @@ muxconfig = { 'parentdir'      : '.'
             , 'keygenport'     : startPort + 1
             , 'dbport'         : startPort + 2
             , 'controllerport' : startPort + 3
+            , 'termport'       : startPort + 4 # TODO can this be a list?
             , 'servername'     : 'localhost'
             }
 
