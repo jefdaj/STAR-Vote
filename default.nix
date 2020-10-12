@@ -15,11 +15,11 @@ rec {
   # nix-build default.nix -A star-crypto
   append-only-bb  = nixpkgs.callPackage ./append-only-bb  { inherit nixpkgs; };
   star-crypto     = nixpkgs.callPackage ./star-crypto     { inherit nixpkgs; };
-  star-keygen     = nixpkgs.callPackage ./star-keygen     { inherit nixpkgs; };
-  star-terminal   = nixpkgs.callPackage ./star-terminal   { inherit nixpkgs; };
-  star-types      = nixpkgs.callPackage ./star-types      { inherit nixpkgs; };
-  star-util       = nixpkgs.callPackage ./star-util       { inherit nixpkgs; };
-  star-voter-db   = nixpkgs.callPackage ./star-voter-db   { inherit nixpkgs; };
-  star-controller = nixpkgs.callPackage ./star-controller { inherit nixpkgs; };
+  # star-keygen     = nixpkgs.callPackage ./star-keygen     { inherit nixpkgs; };
+  # star-terminal   = nixpkgs.callPackage ./star-terminal   { inherit nixpkgs; };
+  # star-types      = nixpkgs.callPackage ./star-types      { inherit nixpkgs; };
+  # star-util       = nixpkgs.callPackage ./star-util       { inherit nixpkgs; };
+  # star-voter-db   = nixpkgs.callPackage ./star-voter-db   { inherit nixpkgs; };
+  # star-controller = nixpkgs.callPackage ./star-controller { inherit nixpkgs; };
 
 }

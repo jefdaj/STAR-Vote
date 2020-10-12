@@ -42,6 +42,7 @@ buildKeyPair params = do
       lb = 1
       ub = p - 1
   privateExponent <- getCRandomR (lb, ub)
+      -- TODO here we want powerMod :: Integer -> Integer -> Integer
   let publicKey  = TEGPublicKey  params (powerMod g privateExponent p)
       privateKey = TEGPrivateKey params privateExponent
   return (publicKey, privateKey)
@@ -61,6 +62,7 @@ encryptAsym (TEGPublicKey params halfSecret) msg = do
   unless (inRange (0,p-1) msg) (throwError tooMuchDataError)
   privateExponent <- getCRandomR (lb, ub)
   let gamma = powerMod g privateExponent p
+      -- TODO here we also want powerMod :: Integer -> Integer -> Integer
       delta = msg * (powerMod halfSecret privateExponent p)
   return (TEGCipherText gamma delta)
   where
@@ -78,6 +80,8 @@ decryptAsym pk c = mod (gamma' * delta) p
         p = tegOrder params
 
         g = tegGenerator params
+        -- TODO but here we want powerMod :: Integer -> Integer -> Mod m1,
+        -- which suggests that we kind of need the Mod in all of them before converting back to Integer?
         gamma' = fromJust $ invertMod (powerMod gamma privateExponent p) p
 
 -- Shamir's (t, n) threshold scheme (Setup)
