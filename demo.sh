@@ -12,7 +12,7 @@ for d in append-only-bb star-{controller,crypto,keygen,terminal,types,util,voter
 done
 
 # and add all of them to the PATH
-# export PATH=$(find append-only-bb star-* -type d -name bin | xargs realpath | while read d; do echo -n "${d}:"; done)$PATH
+export PATH=$(find append-only-bb star-* -type d -name bin | xargs realpath | while read d; do echo -n "${d}:"; done)$PATH
 
 # check that it works
 # echo
