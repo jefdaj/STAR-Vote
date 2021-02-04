@@ -13,7 +13,9 @@ rather than start with a naive internet voting scheme that opens democracy up to
 we start with a relatively normal polling place and add cryptographic assurances.
 The result looks similar to the current system from a user perspective, but is more trustworthy.
 
-*STAR-Vote* is currently comprised of multiple components meant to run on physically separate machines:
+### Development plan
+
+*STAR-Vote* is comprised of multiple components meant to run on physically separate machines:
 
 - *back-end applications* that handle the generation of encryption keys, maintenance of a voter status database, maintenance of a public authenticated write-only bulletin board, and tallying of cast ballots after an election
 - a *polling place controller* that manages the *STAR-Vote* protocol at a given polling place
@@ -23,8 +25,15 @@ The result looks similar to the current system from a user perspective, but is m
 - a *ballot reading station* that can scan a filled paper ballot and read it to the voter (for accessibility purposes)
 - a *vote submission station* at which voters can cast their completed ballots. 
 
+The plan is roughly:
+
+- [ ] Update the old code and get everything running on current Haskell and Nix infrastructure
+- [ ] Add demos and user-friendly documentation
+- [ ] Swap out the "public, append-only bulletin board" and use the Cardano blockchain for all public communication
+- [ ] Swap out the back-end applications for versions built on top of ATALA PRISM
+
 Once the bugs are worked out and everyone trusts it, the next step will be to relax the in-person voting requirements
-and move toward the convenient system on your smartphone that everyone is really envisioning.
+and move toward the more convenient system on your smartphone that everyone is really envisioning.
 
 ### Voter Flow Overview
 
