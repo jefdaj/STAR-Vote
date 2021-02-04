@@ -13,7 +13,7 @@ rather than start with a naive internet voting scheme that opens democracy up to
 we start with a relatively normal polling place and add cryptographic assurances.
 The result looks similar to the current system from a user perspective, but is more trustworthy.
 
-### Development plan
+### Development overview
 
 *STAR-Vote* is comprised of multiple components meant to run on physically separate machines:
 
@@ -25,12 +25,12 @@ The result looks similar to the current system from a user perspective, but is m
 - a *ballot reading station* that can scan a filled paper ballot and read it to the voter (for accessibility purposes)
 - a *vote submission station* at which voters can cast their completed ballots. 
 
-The plan is roughly:
+The plan is roughly to:
 
 - [ ] Update the old code and get everything running on current Haskell and Nix infrastructure
 - [ ] Add demos and user-friendly documentation
-- [ ] Swap out the "public, append-only bulletin board" and use the Cardano blockchain for all public communication
-- [ ] Swap out the back-end applications for versions built on top of ATALA PRISM
+- [ ] Swap out the "public, append-only bulletin board" module for the [Cardano blockchain][2]
+- [ ] Swap out the back-end management applications and voter check-in station for something built with [ATALA PRISM][3]
 
 Once the bugs are worked out and everyone trusts it, the next step will be to relax the in-person voting requirements
 and move toward the more convenient system on your smartphone that everyone is really envisioning.
@@ -48,3 +48,5 @@ From the voter's perspective, there are several steps in the *STAR-Vote* process
 7. *Post-Election Review*. Once the election is over, the voter can check that each ballot was appropriately counted and/or spoiled by using the corresponding receipt from the *Printing* step.
 
 [1]: https://github.com/FreeAndFair/STAR-Vote
+[2]: https://explorer.cardano.org/en
+[3]: https://www.youtube.com/watch?v=wemcgPA3IPQ
