@@ -5,7 +5,26 @@ This fork of the *Secure, Transparent, Auditable and Reliable* voting system
 focuses on reproducible builds, ease of use, and blockchain integration.
 See the [upstream README][1] for a better a better academic treatment: formal methods, history of the code, etc.
 
-*STAR-Vote* is comprised of multiple components: *back-end applications* that handle the generation of encryption keys, maintenance of a voter status database, maintenance of a public authenticated write-only bulletin board, and tallying of cast ballots after an election; a *polling place controller* that manages the *STAR-Vote* protocol at a given polling place; a *check-in station* used by voters to check in to a polling place; a *ballot claim station* used by voters to obtain a ballot code after checking in; a *voting terminal* at which voters mark their ballots electronically and receive filled paper ballots; a *ballot reading station* that can scan a filled paper ballot and read it to the voter (for accessibility purposes); and a *vote submission station* at which voters can cast their completed ballots. 
+*STAR-Vote* is a pragmatic system that tries to meet all the current requirements for a real in-person election.
+It's a stepping stone between the legacy system, broken in all the traditional ways,
+and future blockchain voting, which we need to be careful to avoid breaking in novel ways!
+The philosophy here is "move slowly and don't break things";
+rather than start with a naive internet voting scheme that opens democracy up to all manner of systemic attack vectors,
+we start with a relatively normal polling place and add cryptographic assurances.
+The result looks similar to the current system from a user perspective, but is more trustworthy.
+
+*STAR-Vote* is currently comprised of multiple components meant to run on physically separate machines:
+
+- *back-end applications* that handle the generation of encryption keys, maintenance of a voter status database, maintenance of a public authenticated write-only bulletin board, and tallying of cast ballots after an election
+- a *polling place controller* that manages the *STAR-Vote* protocol at a given polling place
+- a *check-in station* used by voters to check in to a polling place
+- a *ballot claim station* used by voters to obtain a ballot code after checking in
+- a *voting terminal* at which voters mark their ballots electronically and receive filled paper ballots
+- a *ballot reading station* that can scan a filled paper ballot and read it to the voter (for accessibility purposes)
+- a *vote submission station* at which voters can cast their completed ballots. 
+
+Once the bugs are worked out and everyone trusts it, the next step will be to relax the in-person voting requirements
+and move toward the convenient system on your smartphone that everyone is really envisioning.
 
 ### Voter Flow Overview
 
