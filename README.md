@@ -31,9 +31,11 @@ The plan is roughly to:
 - [ ] Add demos and user-friendly documentation
 - [ ] Swap out the "public, append-only bulletin board" module for the [Cardano blockchain][2]
 - [ ] Swap out the back-end management applications and voter check-in station for something built with [ATALA PRISM][3]
+- [ ] Release it for testing by the public, and promote use in local elections
 
-Once the bugs are worked out and everyone trusts it, the next step will be to relax the in-person voting requirements
-and move toward the more convenient system on your smartphone that everyone is really envisioning.
+Once the bugs are worked out and it has been used successfully in real elections,
+the next (optional) step will be to relax the in-person voting requirements and
+move toward the more convenient system on your smartphone that everyone is really envisioning.
 
 ### Voter Flow Overview
 
