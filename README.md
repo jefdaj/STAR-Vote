@@ -30,6 +30,7 @@ The plan is roughly to:
 - [ ] Update the old code and get everything running on current Haskell and Nix infrastructure
 - [ ] Add demos and user-friendly documentation
 - [ ] Swap out the "public, append-only bulletin board" module for the [Cardano blockchain][2]
+- [ ] Write a reference implementation of the vote tallying and auditing code using a Cardano wallet
 - [ ] Swap out the back-end management applications and voter check-in station for something built with [ATALA PRISM][3]
 - [ ] Release it for testing by the public, and promote use in local elections
 
