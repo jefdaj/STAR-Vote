@@ -28,7 +28,7 @@ The result looks similar to the current system from a user perspective, but is m
 The plan is roughly to:
 
 - [ ] Update the old code and get everything running on current Haskell and Nix infrastructure
-- [ ] Add demos and user-friendly documentation
+- [ ] Explain the design to lay people with videos, demos, and blog posts
 - [ ] Swap out the "public, append-only bulletin board" module for the [Cardano blockchain][2]
 - [ ] Write a reference implementation of the vote tallying and auditing code using a Cardano wallet
 - [ ] Swap out the back-end management applications and voter check-in station for something built with [ATALA PRISM][3]
@@ -37,6 +37,7 @@ The plan is roughly to:
 Once the bugs are worked out and it has been used successfully in real elections,
 the next (optional) step will be to relax the in-person voting requirements and
 move toward the more convenient system on your smartphone that everyone is really envisioning.
+We can't rush that part without potentially breaking things.
 
 ### Voter Flow Overview
 
