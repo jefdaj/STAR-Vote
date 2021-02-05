@@ -6,11 +6,9 @@ focuses on reproducible builds, working demos, and blockchain integration.
 See the [upstream README][1] for a better academic treatment: formal methods, history of the code, etc.
 
 *STAR-Vote* is a pragmatic system that tries to meet all the current requirements for a real in-person election.
-It's a stepping stone between the legacy system, broken in all the traditional ways,
-and future blockchain voting, which we need to be careful to avoid breaking in novel ways!
 The philosophy here is "move slowly and don't break anything";
-rather than start with a naive internet voting scheme that opens democracy up to all manner of systemic attack vectors,
-we start with a relatively normal polling place and add cryptographic assurances.
+rather than start with a naive internet voting scheme open to all manner of systemic attack vectors,
+we start with a relatively traditional offline polling place and add cryptographic assurances.
 The result looks similar to the current system from a user perspective, but is more trustworthy.
 
 ### Development overview
